@@ -1,26 +1,41 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Baby Yoda</title>
+        <title>Sloan Roseberry</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" integrity="sha256-2YQRJMXD7pIAPHiXr0s+vlRWA7GYJEK0ARns7k2sbHY=" crossorigin="anonymous" />
         <style>
-            img.bio-image { float: left; padding: 0rem 3rem 0rem 1rem; height: 18.5rem; }
+            img.bio-image { float: left; padding: 0rem 3rem 0rem 1rem; height: 18.5rem; border-radius: 50%; border-color: lightskyblue;}
+
+            body{background-color:lightpink ;}
         </style>
+        <script>
+            console.log("hello")
+
+            function changeBackgroundColor() {
+                const letters = '0123456789ABCDEF';
+            let color = '#';
+            for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            document.body.style.background = color;
+            }
+        </script>
     </head>
-    <body>
+    <body class="main">
         <div class="container">
             <div class="row">
                 <div class="twelve column">
                     <!-- Bio Image -->
-                    <img class="bio-image" src="https://i.ebayimg.com/images/g/IeIAAOSwJBdd8w4E/s-l500.png" alt="bio image">
+                    <img class="bio-image" src="https://i.imgur.com/UyBXJ8J.jpg" alt="bio image">
 
                     <!-- Resume Title -->
-                    <h2>Baby Yoda</h2>
-                    <h5>Web Developer</h5>
+                    <h2>Sloan Roseberry</h2>
+                    <h5>Content Marketer</h5>
 
                     <!-- Contact Info -->
-                    <span><strong>Email:</strong> <a href="mailto:baby.yoda@meme.io">baby.yoda@meme.io</a></span><br>
-                    <span><strong>Phone:</strong> 208-829-2122</span>
+                    <span><strong>Email:</strong> <a href="mailto:sloan.roseberry@gmail.com">sloan.roseberry@gmail.com</a></span><br>
+                    <span><strong>Phone:</strong> (208)919-6438</span><br>
+                    <span><strong>Github: </strong><a href=https://github.com/vroseberry>vroseberry</a></span>
                 </div>
             </div>
 
@@ -31,14 +46,14 @@
                 <div class="twelve column">
                     <h4>Work History</h4>
 
-                    <h6><strong>Pied Piper</strong> 2017-Present</h6>
-                    <p>Beard twee live-edge, pop-up kogi pabst etsy shoreditch small batch vegan. Skateboard brooklyn gochujang 90's ennui pour-over before they sold out swag cliche wolf butcher cronut sriracha shoreditch bushwick. Activated charcoal jean shorts chillwave four dollar toast meggings health goth cornhole.</p>
+                    <h6><strong>Intuit</strong> April 2019-Present</h6>
+                    <p>Content marketing and strategy, research, and SEO for <a href="www.tsheets.com">tsheets.com</a>.</p>
 
-                    <h6><strong>Hooli</strong> 2014-2017</h6>
-                    <p>Beard twee live-edge, pop-up kogi pabst etsy shoreditch small batch vegan. Skateboard brooklyn gochujang 90's ennui pour-over before they sold out swag cliche wolf butcher cronut sriracha shoreditch bushwick. Activated charcoal jean shorts chillwave four dollar toast meggings health goth cornhole.</p>
+                    <h6><strong>Page One Power</strong> 2017-2019</h6>
+                    <p>Link building and content marketing!</p>
 
-                    <h6><strong>Dunder Mifflin</strong> 2010-2014</h6>
-                    <p>Beard twee live-edge, pop-up kogi pabst etsy shoreditch small batch vegan. Skateboard brooklyn gochujang 90's ennui pour-over before they sold out swag cliche wolf butcher cronut sriracha shoreditch bushwick. Activated charcoal jean shorts chillwave four dollar toast meggings health goth cornhole.</p>
+                    <h6><strong>PAGES SEO Magazine</strong> 2017-2019</h6>
+                    <p>Managing editor, writer, and content strategist. Social media, email marketing, and website management.</p>
                 </div>
             </div>
 
@@ -47,8 +62,9 @@
                 <div class="twelve column">
                     <h4>Education</h4>
 
-                    <h6><strong>Super Hacker U</strong> 2010</h6>
-                    <p>Beard twee live-edge, pop-up kogi pabst etsy shoreditch small batch vegan. Skateboard brooklyn gochujang 90's ennui pour-over before they sold out swag cliche wolf butcher cronut sriracha shoreditch bushwick. Activated charcoal jean shorts chillwave four dollar toast meggings health goth cornhole.</p>
+                    <h6><strong>Boise State University</strong> 2017</h6>
+                    <p>BBS, Marketing</p>
+                    <button onclick="changeBackgroundColor()">Change Background Color</button>
 
                 </div>
             </div>
